@@ -16,3 +16,5 @@ class Personajes {
 
   morir() {}
 }
+
+export default Personajes;
