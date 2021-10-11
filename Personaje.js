@@ -1,24 +1,29 @@
 class Personaje {
-  serie = "Juego de Tronos";
   nombre;
-  familia;
   edad;
-  estado = "vivo";
-  comunicado = "hola";
+  vivo = true;
+  serie = "Juego de Tronos";
+  comunicado = "Yo soy un personaje indefinido :(";
 
-  constructor(nombre, familia, edad, estado, comunicado) {
+  static familia = {
+    arryn: "casa arryn",
+    stark: "casa stark",
+    targaryan: "casa targaryan",
+  };
+
+  constructor(nombre, familia, edad) {
     this.nombre = nombre;
     this.familia = familia;
     this.edad = edad;
-    this.estado = estado;
-    this.comunicado = comunicado;
+  }
+
+  morir() {
+    this.vivo = false;
   }
 
   comunicar() {
-    return `Hola soy el ${this.nombe} ${this.comunicado}`;
+    return this.comunicado;
   }
-
-  morir() {}
 }
 
 export default Personaje;

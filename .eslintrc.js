@@ -20,5 +20,4 @@ module.exports = {
     "import/extensions": "off",
   },
   parser: "@babel/eslint-parser",
-  babel: {},
 };
