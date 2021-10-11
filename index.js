@@ -40,7 +40,7 @@ class Componente {
         listaItems.innerHTML = `
         <div class="card character__card">
             <img
-              src="img/no-one.jpeg"
+              src="img/${personaje.nombre.toLowerCase()}.jpeg"
               alt="${personaje.nombre} de la familia ${personaje.familia}"
               class="character__picture card-img-top"
             />
@@ -87,7 +87,6 @@ class Componente {
                     : ``
                 }
 
-            
                 </ul>
                 <div class="character__actions">
                   <button class="character__action btn">habla</button>
@@ -98,12 +97,13 @@ class Componente {
             <i class="emoji"></i>
           </div>
         
-        
-        
-        
-        
         `;
         contenedorLista[0].appendChild(listaItems);
+        /* const i = personajeindexOf();
+        document.querySelectorAll("character__action btn").
+        addEventListener("click", (personaje) => {
+          console.log("hola");
+        }); */
       });
     }
   }
