@@ -4,15 +4,19 @@ class Personajes {
   familia;
   edad;
   estado;
+  comunicado;
 
-  constructor(nombre, familia, edad, estado) {
+  constructor(nombre, familia, edad, estado, comunicado) {
     this.nombre = nombre;
     this.familia = familia;
     this.edad = edad;
     this.estado = estado;
+    this.comunicado = comunicado;
   }
 
-  comunicar() {}
+  comunicar() {
+    return `Hola soy ${this.nombe} ${this.comunicado}`;
+  }
 
   morir() {}
 }
