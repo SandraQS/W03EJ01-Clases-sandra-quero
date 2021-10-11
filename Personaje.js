@@ -1,10 +1,10 @@
-class Personajes {
+class Personaje {
   serie = "Juego de Tronos";
   nombre;
   familia;
   edad;
-  estado;
-  comunicado;
+  estado = "vivo";
+  comunicado = "hola";
 
   constructor(nombre, familia, edad, estado, comunicado) {
     this.nombre = nombre;
@@ -15,10 +15,10 @@ class Personajes {
   }
 
   comunicar() {
-    return `Hola soy ${this.nombe} ${this.comunicado}`;
+    return `Hola soy el ${this.nombe} ${this.comunicado}`;
   }
 
   morir() {}
 }
 
-export default Personajes;
+export default Personaje;
