@@ -122,7 +122,10 @@ console.log(personajes);
   }
 } */
 
+// const ul = document.querySelector(".characters-list");
+// console.log(ul);
+// console.log(ul.);
+// const tarjeta = new Componente(ul, "character col", "li");
+
 const ul = document.querySelector(".characters-list");
 console.log(ul);
-const tarjeta = new Componente(ul, "character col", "li");
-console.log(tarjeta);

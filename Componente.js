@@ -9,7 +9,7 @@ class Componente {
     this.elementoPadre = elementoPadre;
     this.elemento.className = className;
 
-    this.elementoPadre.appendChild(this.elemento);
+    this.elementoPadre.append(this.elemento);
   }
 }
 
